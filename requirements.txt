@@ -1,0 +1,8 @@
+streamlit
+pandas
+SpeechRecognition
+PyAudio
+fuzzywuzzy
+openpyxl
+python-Levenshtein
+unidecode
