@@ -10,21 +10,16 @@ from datetime import datetime
 # Configuration initiale
 st.set_page_config(page_title="ekho - Pointage vocal", page_icon="🎤", layout="wide")
 
-# Header avec logo et titre
-col1, col2 = st.columns([1, 4])
-with col1:
-    st.image("images/ekho_logo.png", width=120)
-with col2:
-    st.markdown("<h1 style='color:#0b76ff; margin-top: 20px;'>ekho - Pointage vocal intelligent</h1>", unsafe_allow_html=True)
+# Bannière avec l'image en pleine largeur
+st.image("images/bann1.png", use_container_width=True)
 
 # Style CSS amélioré
 st.markdown("""
 <style>
-    /* En-têtes de colonnes */
-    th[data-testid="stColumnHeader"] {
-        background-color: #f8f9fa !important;
-        color: #0b76ff !important;
-        font-weight: bold;
+    /* ... existing CSS styles ... */
+    /* Réduire l'espace après l'image */
+    .element-container:has(img) {
+        margin-bottom: 0px !important;
     }
     
     /* Boutons principaux */
@@ -64,6 +59,11 @@ st.markdown("""
     .dataframe {
         border-radius: 10px;
         overflow: hidden;
+    }
+    
+    /* Réduire l'espace après l'image */
+    .element-container:has(img) {
+        margin-bottom: 0px !important;
     }
 </style>
 """, unsafe_allow_html=True)
